@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Ход первого игрока"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textSize="50sp">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:background="@drawable/back"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp">
+
+                    <ImageView
+                        android:id="@+id/zero1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/zero" />
+
+                    <ImageView
+                        android:id="@+id/empty1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/empty" />
+
+                    <ImageView
+                        android:id="@+id/crest1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/crest" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/zero2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/zero" />
+
+                    <ImageView
+                        android:id="@+id/empty2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/empty" />
+
+                    <ImageView
+                        android:id="@+id/crest2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/crest" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/zero3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/zero" />
+
+                    <ImageView
+                        android:id="@+id/empty3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/empty" />
+
+                    <ImageView
+                        android:id="@+id/crest3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/crest" />
+                </FrameLayout>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="22dp">
+
+                <FrameLayout
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp">
+
+                    <ImageView
+                        android:id="@+id/zero4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/zero" />
+
+                    <ImageView
+                        android:id="@+id/empty4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/empty" />
+
+                    <ImageView
+                        android:id="@+id/crest4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/crest" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/zero5"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/zero" />
+
+                    <ImageView
+                        android:id="@+id/empty5"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/empty" />
+
+                    <ImageView
+                        android:id="@+id/crest5"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/crest" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/zero6"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/zero" />
+
+                    <ImageView
+                        android:id="@+id/empty6"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/empty" />
+
+                    <ImageView
+                        android:id="@+id/crest6"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/crest" />
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="22dp">
+
+                <FrameLayout
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp">
+
+                    <ImageView
+                        android:id="@+id/zero7"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/zero" />
+
+                    <ImageView
+                        android:id="@+id/empty7"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/empty" />
+
+                    <ImageView
+                        android:id="@+id/crest7"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/crest" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:id="@+id/zero8"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/zero" />
+
+                    <ImageView
+                        android:id="@+id/empty8"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/empty" />
+
+                    <ImageView
+                        android:id="@+id/crest8"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/crest" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:id="@+id/zero9"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/zero" />
+
+                    <ImageView
+                        android:id="@+id/empty9"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/empty" />
+
+                    <ImageView
+                        android:id="@+id/crest9"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:onClick="onClick"
+                        app:srcCompat="@drawable/crest" />
+                </FrameLayout>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
